@@ -1,26 +1,197 @@
+<!--  Author: Ryan Luu. This website is a demo site created as part of an assignment at the
+ University of Southern California--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Los Angeles! </title>
-
     <link rel="stylesheet" href="hw1.css">
+
 </head>
 
-
 <body>
-
     <div id="header">
         <div id="navigation">
-            <a href="#home">Home</a>
-            <a href="#explore">Explore</a>
-            <a href="#contact">Contact</a>
+            <a href="Home1.html">Home</a>
+            <a href="404.html">Explore</a>
+            <a href="404.html">Contact</a>
         </div>
 
     </div>
 
+    <div class="cropped">
+        <img src="rodeo-drive.jpg" alt="rodeo-drive">
+        <div class="centered">LA - The City of Angels</div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+
+    <div class="container">
+        <div class="container_column">
+        <img src="griffith.jpg" alt="griffith labs" width="320" height="240">
+            <div id="card_header1"> <p style="font-size:20px">Griffith Labs</p> </div>
+            <script>
+                fetch('data.json')
+                    .then(function (response) {
+                        return response.json();
+                    }).then(function (obj) {
+                    var main = document.getElementById("card_header1");
+                    var header = document.createElement("header");
+                    var text = document.createElement("text");
+                    var pic = document.createElement("picture");
+                    pic.innerHTML = obj.section2[0].image;
+                    header.innerHTML = obj.section2[0].heading;
+                    text.innerHTML = obj.section2[0].text;
+                    main.appendChild(text);
+                }).catch(function (error) {
+                    console.error("I messed up somewhere or something is wrong!");
+                    console.error(error);
+                });
+
+            </script>
+            <br>
+
+    </div>
+        <div class="container_column">
+            <img src="mountains.jpg" alt="mountains" width="320" height="240">
+            <div id="card_header2"><p style="font-size:20px"> Mountains</p></div>
+
+            <script>
+                fetch('data.json')
+                    .then(function (response) {
+                        return response.json();
+                    }).then(function (obj) {
+                    var main = document.getElementById("card_header2");
+                    var header = document.createElement("header");
+                    var text = document.createElement("text");
+                    var pic = document.createElement("picture");
+                    pic.innerHTML = obj.section2[1].image;
+                    header.innerHTML = obj.section2[1].heading;
+                    text.innerHTML = obj.section2[1].text;
+                    main.appendChild(text);
+                }).catch(function (error) {
+                    console.error("I messed up somewhere or something is wrong!");
+                    console.error(error);
+                });
+
+            </script>
+         </div>
+
+        <div class="container_column">
+            <img src="universalstudios.jpg" alt="Universal Studios" width="320" height="240">
+            <div id="card_header3"> <p style="font-size:20px">Universal Studios</p> </div>
+
+            <script>
+                fetch('data.json')
+                    .then(function (response) {
+                        return response.json();
+                    }).then(function (obj) {
+                    var main = document.getElementById("card_header3");
+                    var header = document.createElement("header");
+                    var text = document.createElement("text");
+                    var pic = document.createElement("picture");
+                    pic.innerHTML = obj.section2[2].image;
+                    header.innerHTML = obj.section2[2].heading;
+                    text.innerHTML = obj.section2[2].text;
+                    main.appendChild(text);
+                }).catch(function (error) {
+                    console.error("I messed up somewhere or something is wrong!");
+                    console.error(error);
+                });
+
+            </script>
 
 
+        </div>
+
+    </div>
+
+    <div id="section3">
+        <img src="lasky.png" alt="LA sky line" width="640" height="360" style="float: right;margin-right: 200px; margin-top:200px;">
+        <br><br><br> <br><br><br> <br><br><br><br>
+        <p class="s3">Los Angeles is the City of Dreams and is the heart of southern California. It is a vast and varied geographic entity. The city is famous  for being the home of the rich and famous, Hollywood, the main home of major entertainment companies, ethnically diverse, and the second-largest city in America.</p>
+
+        <br>
+        <p class="s3">The residents of Los Angeles are called Angelenos. Their lifestyle relies on the automobile, idealizes the single-family dwelling, and favours informality. With notable exceptions, the skyline is primarily horizontal rather than vertical. Los Angeles is a place of extraordinary ethnic and racial diversity, owing largely to immigration. It is a must visit place and a beautiful vacation desination.
+        </p>
+
+    </div>
+
+    <div id="section4">
+        <div id="section4-hollywood">
+            <img src="hollywood.jpg" alt="mountains" width="360" height="240" style="float: left;">
+            <div id="innerbox1">
+                <p class="s4"> Hollywood</p>
+
+
+                <div id="s4text1"> </div>
+                <script>
+                    fetch('data.json')
+                        .then(function (response) {
+                            return response.json();
+                        }).then(function (obj) {
+                        var main = document.getElementById("s4text1");
+                        var header = document.createElement("header");
+                        var text = document.createElement("text");
+                        var pic = document.createElement("picture");
+                        pic.innerHTML = obj.section4[0].image;
+                        header.innerHTML = obj.section4[0].heading;
+                        text.innerHTML = obj.section4[0].text;
+                        main.appendChild(text);
+                    }).catch(function (error) {
+                        console.error("I messed up somewhere or something is wrong!");
+                        console.error(error);
+                    });
+
+                </script>
+            </div>
+        </div>
+        <div id="section4-beaches">
+            <img src="beach.jpg" alt="mountains" width="360" height="240" style="float: right;">
+            <p class="s4-1">Beaches </p>
+            <div id="innerbox2">
+
+                <div id="s4text2"> </div>
+                <script>
+                    fetch('data.json')
+                        .then(function (response) {
+                            return response.json();
+                        }).then(function (obj) {
+                        var main = document.getElementById("s4text2");
+                        var pic = document.createElement("picture");
+                        var header = document.createElement("header");
+                        var text = document.createElement("text");
+                        pic.innerHTML = obj.section4[1].image;
+                        header.innerHTML = obj.section4[1].heading;
+                        text.innerHTML = obj.section4[1].text;
+                        main.appendChild(text);
+                    }).catch(function (error) {
+                        console.error("I messed up somewhere or something is wrong!");
+                        console.error(error);
+                    });
+
+                </script>
+        </div>
+    </div>
+    </div>
+<div id="footer">
+    <div id="footer-text1">
+        <br><br><br><br>
+        <p> Tip the world over on its side and everything loose will land <br> in Los Angeles </p>
+        <br>
+        <p>-Frank Lloyd Wright</p>
+    </div>
+
+    <div id="footer-text2">
+        <br><br>
+        <p>Designed By <br><br> Ryan Luu</p>
+        <a href = "mailto: rluu@usc.edu.com">rluu@usc.edu</a>
+        <br><br>
+        <a href="tel:520-360-7716">520-360-7716</a>
+    </div>
+
+
+</div>
 
 </body>
 </html>
