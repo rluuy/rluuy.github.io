@@ -28,8 +28,8 @@
 
     <div class="container">
         <div class="container_column">
-        <img src="griffith.jpg" alt="griffith labs" width="320" height="240">
-            <div id="card_header1"> <p style="font-size:20px">Griffith Labs</p> </div>
+        <img src="griffith.jpg" alt="Griffith Observatory" width="320" height="240">
+            <div id="card_header1"> <p style="font-size:20px">Griffith Observatory </p> </div>
             <script>
                 fetch('data.json')
                     .then(function (response) {
@@ -107,19 +107,21 @@
     </div>
 
     <div id="section3">
-        <img src="lasky.png" alt="LA sky line" width="640" height="360" style="float: right;margin-right: 200px; margin-top:200px;">
-        <br><br><br> <br><br><br> <br><br><br><br>
+
+        <div id="section3-skyline">
+            <img src="lasky.png"  alt="LA sky line" width="640" height="360" style="float: right; padding-left:30px">
+
         <p class="s3">Los Angeles is the City of Dreams and is the heart of southern California. It is a vast and varied geographic entity. The city is famous  for being the home of the rich and famous, Hollywood, the main home of major entertainment companies, ethnically diverse, and the second-largest city in America.</p>
 
-        <br>
         <p class="s3">The residents of Los Angeles are called Angelenos. Their lifestyle relies on the automobile, idealizes the single-family dwelling, and favours informality. With notable exceptions, the skyline is primarily horizontal rather than vertical. Los Angeles is a place of extraordinary ethnic and racial diversity, owing largely to immigration. It is a must visit place and a beautiful vacation desination.
         </p>
 
     </div>
+    </div>
 
     <div id="section4">
         <div id="section4-hollywood">
-            <img src="hollywood.jpg" alt="mountains" width="360" height="240" style="float: left;">
+            <img src="hollywood.jpg" alt="mountains" width="360" height="240" style="float: left; padding-right: 15px;">
             <div id="innerbox1">
                 <p class="s4"> Hollywood</p>
 
@@ -147,7 +149,7 @@
             </div>
         </div>
         <div id="section4-beaches">
-            <img src="beach.jpg" alt="mountains" width="360" height="240" style="float: right;">
+            <img src="beach.jpg" alt="mountains" width="360" height="240" style="float: right ;padding-left:15px;">
             <p class="s4-1">Beaches </p>
             <div id="innerbox2">
 
@@ -184,10 +186,11 @@
 
     <div id="footer-text2">
         <br><br>
-        <p>Designed By <br><br> Ryan Luu</p>
-        <a href = "mailto: rluu@usc.edu.com">rluu@usc.edu</a>
-        <br><br>
-        <a href="tel:520-360-7716">520-360-7716</a>
+        <p style="font-size: 20px;">Designed By <br> </p>
+        <p>Ryan Luu</p>
+        <a href = "mailto: rluu@usc.edu.com" class="footer">rluu@usc.edu</a>
+        <br>
+        <a href="tel:520-360-7716" class="footer">520-360-7716</a>
     </div>
 
 
