@@ -295,3 +295,22 @@ a.not_implmented:hover {
     text-shadow: 1px 1px #F47920;
     background-color: transparent;
 }
+
+.tinted-image {
+    width: 1600px;
+    height: 450px;
+    background: linear-gradient(rgba(244,164,96), rgba(255,218,185, 0.8)), url(404-featured.jpg) center center;
+    /*background: url(404-featured.jpg);*/
+
+    background-blend-mode: multiply;
+    background-position: top 50% left 45%;
+    background-repeat: no-repeat;
+
+}
+
+.tinted-image p{
+    text-align: center;
+    font-size: 60px;
+    top: 180px;
+    position: relative;
+}
