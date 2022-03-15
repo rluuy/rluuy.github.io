@@ -1,1 +1,89 @@
-<p>Why Hello There</p>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Los Angeles! </title>
+    <link rel="stylesheet" href="hw2.css">
+    <style>
+        .blood_pressure_home{
+
+            border: 3px solid green;
+
+        }
+
+        p {
+            text-align: center;
+        }
+
+        form{
+            display:block;
+            text-align:center;
+            padding:10px;
+            font-size:22px;
+        }
+
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+        input[type=submit]{
+            background-color: #1f5297;
+            color:white;
+            border: none;
+            padding: 6px 20px;
+            font-family: "Times New Roman";
+            font-size: 20px;
+        }
+
+        textarea{
+            overflow-y: scroll;
+            resize:none;
+        }
+
+        textarea{
+            overflow-y:scroll ;
+            resize:none;
+        }
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+<div class="blood_pressure_home">
+
+
+<p style="color:darkred; font-size: 30px; font-family: 'Times New Roman'"> <b>Blood Pressure Predictor </b>  </p>
+<p style="color:darkred; font-size: 20px;">Fill out the form to get your Blood Pressure estimate!</p>
+
+<form action="/action_page.php">
+    <label for="age"><b>Age <span style="color:#FF0000">*</span></b></label>
+
+    <input type="text" id="age" name="age" placeholder="Enter age in years"><br><br>
+    <label for="Weight"> <b>Weight <span style="color:#FF0000">*</span></b></label>
+    <input type="text" id="weight" name="weight" placeholder="Enter weight in kg"><br><br>
+
+    <input type="submit" value="Calculate">
+
+</form>
+
+</div>
+
+</body>
+
+
+
+</html>
+
