@@ -12,11 +12,11 @@ def train():
     regr = LinearRegression()
     regr.fit(x, y)
 
-    joblib.dump(regr, "regr.pkl")
+    joblib.dump(regr, "luuy_regr.pkl")
 
 
 def load():
-    clf = joblib.load("regr.pkl")
+    clf = joblib.load("luuy_regr.pkl")
     age = 18
     weight = 60
     x = pd.DataFrame([[age, weight]], columns=["Age", "Weight"])
