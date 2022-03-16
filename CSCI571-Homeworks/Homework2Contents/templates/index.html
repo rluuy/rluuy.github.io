@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Pressure Predictor </title>
+    <link rel="stylesheet" href="hw2.css">
+    <style>
+        .blood_pressure_home{}
+
+        p {text-align: center;}
+        form{display:block;text-align:center;padding:10px;font-size:22px;}
+        label{display: inline-block;width: 100px;text-align: right;}
+        input[type=submit]{
+            background-color: #1f5297;
+            color:white;
+            border: none;
+            padding: 6px 20px;
+            font-family: "Times New Roman";
+            font-size: 20px;
+        }
+        textarea{overflow-y: scroll;resize:none;}
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+<div class="blood_pressure_home">
+
+
+<p style="color:darkred; font-size: 30px; font-family: 'Times New Roman'"> <b>Blood Pressure Predictor </b>  </p>
+<p style="color:darkred; font-size: 20px;">Fill out the form to get your Blood Pressure estimate!</p>
+
+<form name="bp_form" method="post">
+    <label for="age"><b>Age <span style="color:#FF0000">*</span></b></label>
+
+    <input type="number" min="0" id="age" name="age" placeholder="Enter a age in years" required oninvalid="this.setCustomValidity('Please enter a valid age')" oninput="this.setCustomValidity('')" ><br><br>
+    <label for="Weight"> <b>Weight <span style="color:#FF0000">*</span></b></label>
+    <input type="number" min="0" id="weight" name="weight" placeholder="Enter weight in kg" required oninvalid="this.setCustomValidity('Please enter a valid weight')" oninput="this.setCustomValidity('')" ><br><br>
+
+    <input type="submit" value="Calculate">
+
+</form>
+    <p> <b>{{ pred }} </b> </p>
+
+</div>
+
+</body>
+
+
+
+</html>
+
