@@ -59,10 +59,10 @@ html,body{
 }
 
 .social-icon {
-    text-align: center;
+    text-align: left;
     transition: 0.3s ease-in-out;
     text-decoration: none;
-    background-color: rgb(37, 37, 42);
+    background-color: inherit;
 }
 
 #home{
